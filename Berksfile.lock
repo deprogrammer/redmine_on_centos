@@ -1,0 +1,83 @@
+DEPENDENCIES
+  database
+  mysql
+  passenger
+    path: site-cookbooks/passenger
+  passenger_apache2
+  rbenv
+    git: git://github.com/RiotGames/rbenv-cookbook.git
+    revision: 5ad5b5bec6002f7178060972bbc75f302fc37f57
+  redmine
+    path: site-cookbooks/redmine
+  ruby
+    path: site-cookbooks/ruby
+  yum-epel
+
+GRAPH
+  apache2 (1.10.4)
+    iptables (>= 0.0.0)
+    logrotate (>= 0.0.0)
+    pacman (>= 0.0.0)
+  apt (2.3.10)
+  aws (2.2.0)
+  build-essential (2.0.2)
+  chef_handler (1.1.6)
+  database (2.2.0)
+    aws (>= 0.0.0)
+    mysql (>= 5.0.0)
+    mysql-chef_gem (>= 0.0.0)
+    postgresql (>= 1.0.0)
+    xfs (>= 0.0.0)
+  dmg (2.2.0)
+  git (4.0.2)
+    build-essential (>= 0.0.0)
+    dmg (>= 0.0.0)
+    runit (>= 1.0.0)
+    windows (>= 0.0.0)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)
+  iptables (0.13.2)
+  logrotate (1.5.0)
+  mysql (5.2.6)
+  mysql-chef_gem (0.0.2)
+    build-essential (>= 0.0.0)
+    mysql (>= 0.0.0)
+  ohai (2.0.0)
+  openssl (1.1.0)
+  pacman (1.1.1)
+  passenger (0.1.0)
+    passenger_apache2 (>= 0.0.0)
+  passenger_apache2 (2.2.0)
+    apache2 (>= 1.0.4)
+    build-essential (>= 0.0.0)
+  postgresql (3.4.0)
+    apt (>= 1.9.0)
+    build-essential (>= 0.0.0)
+    openssl (>= 0.0.0)
+  rails (0.9.2)
+    apache2 (>= 0.0.0)
+    ruby (>= 0.0.0)
+  rbenv (1.7.1)
+    apt (>= 0.0.0)
+    build-essential (>= 0.0.0)
+    git (>= 0.0.0)
+    ohai (>= 1.1.0)
+  redmine (0.1.0)
+    database (>= 0.0.0)
+    mysql (>= 0.0.0)
+    passenger_apache2 (>= 0.0.0)
+    rails (>= 0.0.0)
+  ruby (0.1.0)
+    rbenv (>= 0.0.0)
+    ruby_build (>= 0.0.0)
+  ruby_build (0.8.0)
+  runit (1.5.10)
+    build-essential (>= 0.0.0)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)
+  windows (1.31.0)
+    chef_handler (>= 0.0.0)
+  xfs (1.1.0)
+  yum (3.2.0)
+  yum-epel (0.3.6)
+    yum (~> 3.0)
